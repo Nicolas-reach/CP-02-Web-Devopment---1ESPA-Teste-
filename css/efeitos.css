@@ -1,0 +1,43 @@
+/*efeitos da pagina contato*/
+/* Faz o usuario ter que colocar o email em vez de alguma coisa aleatoria*/
+input[type=email]:invalid{
+    background: rgb(255, 255, 254);
+}
+input[type=email]:valid{
+    background: green;
+}
+
+/* Faz o usuario ter que preencher o campo obrigatorio */
+input:required{
+    background: rgb(240, 245, 169);
+}
+
+/* Foco nos campos */
+input:focus, textarea:focus{
+    outline: 2px solid rgb(100, 0, 0);
+    transform: scale(1,01);
+    transition: transform 0.1s ease, outline 0.1s ease;
+}
+
+/* Muda a cor do texto quando o usuario seleciona o texto */
+p::selection{
+    color: rgb(255, 255, 255);
+    background: rgb(48, 66, 233);
+
+}
+
+/* Destaca uma cor para indicar a pagina atual na navegação*/
+body.contato nav ul li:nth-child(3) a{
+    font-weight: bold;
+    color: darkred;
+}
+
+
+/* Efeitos da página quiz*/
+
+/* Destaca uma cor para indicar a pagina atual na navegação*/
+body.quiz nav ul li:nth-child(3) a{
+    font-weight: bold;
+    color: darkred;
+
+}

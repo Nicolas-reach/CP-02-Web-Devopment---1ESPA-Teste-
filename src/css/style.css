@@ -1,0 +1,40 @@
+body {
+    background-color: #aaa;
+}
+
+.amostra {
+    height: 250px;
+    width: auto;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* garante nav itens lado a lado */    
+    gap: 16px; /* opcional: espaço entre itens */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}

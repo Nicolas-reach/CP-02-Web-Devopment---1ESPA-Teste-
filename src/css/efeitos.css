@@ -1,0 +1,47 @@
+/* seletor universal */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to right,bisque,aqua,blue);
+}
+header{
+    display:flex;
+    height:80px;
+    justify-content:space-between;
+    margin-bottom:5%;
+    background:blue;
+}
+header nav ul {
+    display:flex;
+    align-items:center;
+    padding:10px;
+    gap:10px;
+    list-style:none;
+}
+header nav ul li a{
+    text-decoration:none;
+    font-size:1.4rem;
+    color:#fff;
+}
+header nav ul li a:hover{
+    color:yellow;
+    text-decoration:underline;
+}
+.cor{
+    width:20px;
+    border-radius:10px;
+}
+#logo{
+    width:100px;
+    height:90px;
+}
+
+#image{
+    width:90%;
+    height:400px;
+    margin-left:60px;
+
+}

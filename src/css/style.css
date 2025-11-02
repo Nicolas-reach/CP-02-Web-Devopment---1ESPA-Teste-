@@ -1,20 +1,39 @@
 body {
     background-color: #aaa;
+    margin: 0;
 }
 
 .amostra {
     height: 250px;
     width: auto;
+    align-self: center; /* sobrescreve o stretch só nela */
+    border-radius: 10px;
 }
 
 .produtos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* evita o stretch */
     justify-content: space-around;
+    flex: 1 1 240px;
+    max-width: 280px;
+    background-color: #999;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: #8A8A8A;
 }
 
 nav ul {
@@ -37,4 +56,79 @@ header h1 {
     margin: 0;
     font-size: 24px;
     text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+#txt {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div div div a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+div div div a:hover {
+    background-color: #555;
+}
+
+div div div a:active {
+    background-color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.secao-espacial {
+    margin: 20px;
+}
+
+nav ul div input.cor {
+    width: 24px;
+    height: 24px;
+    border: black 1px solid;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#botao1 {
+    background-color: #999;
+}
+
+#botao2 {
+    background-color: #777;
+}
+
+#botao3 {
+    background-color: #aaa;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a:active {
+    background-color: #777;
 }

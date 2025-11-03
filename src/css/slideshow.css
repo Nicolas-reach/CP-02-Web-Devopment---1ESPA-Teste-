@@ -1,0 +1,39 @@
+/* Container principal do slideshow */
+.slideshow-container {
+    max-width: 800px; 
+    position: relative;
+    margin: 20px auto; 
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+
+.text {
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    padding: 15px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 31, 63, 0.7);
+    font-weight: bold;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

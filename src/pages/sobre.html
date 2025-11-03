@@ -1,43 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Sobre - SpaceStore</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="./src/assets/imgs/Favicon SpaceStore.jpg" type="image/jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="icon" href="../assets/imgs/Favicon SpaceStore.png" type="image/jpeg">
+    <title>Sobre</title>
 </head>
 <body>
-  <header>
-    <h1>🪐 SpaceStore</h1>
-    <nav>
-      <ul>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="../../index.html">Início</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./quiz.html">Quiz</a></li>
-            <li><a href="./loja.html">loja</a></li>
-            <div>
-                    <input type="button" class="cor" onclick="trocar('#3ae4b1')"/>
-                    <input type="button" class="cor" onclick="trocar('#c13af2')"/>
-                    <input type="button" class="cor" onclick="trocar('#fbff24')"/>
+    
+    <header>
+        <img src="" alt="logo"/>
+        <nav>
+            <ul>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./loja.html">loja</a></li>
+                <div class="cores">
+                    <input type="button" class="cor" onclick="trocar('#002b5b')"/>
+                    <input type="button" class="cor" onclick="trocar('#1e5128')"/>
+                    <input type="button" class="cor" onclick="trocar('#3a1078')"/>
                 </div>
-      </ul>
-    </nav>
-  </header>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="sobre">
-    <h2>Quem Somos</h2>
-    <p>A <strong>SpaceStore</strong> nasceu para trazer o fascínio do universo para o seu dia a dia. 
-    Criamos produtos que unem estilo, tecnologia e inspiração espacial. 
-    Nossa missão é transformar curiosidade em estilo e inovação em realidade.</p>
-    <img src="img/sobre.jpg" alt="Astronauta no espaço">
-  </section>
+<main>
+    
+    <div class="slideshow-container">
 
-  <footer>
-    <p>© 2025 SpaceStore. Todos os direitos reservados.</p>
-  </footer>
+        <div class="mySlides fade">
+            <img src="../assets/imgs/galaxia1.png.webp" style="width:100%" alt="Imagem 1 tema Quiz Espacial">
+            <div class="text">Teste seu Conhecimento Cósmico!</div>
+        </div>
 
-   <script src="../js/color.js"></script>
-  
+        <div class="mySlides fade">
+            <img src="../assets/imgs/sistema solar.png" style="width:100%" alt=">
+            <div class="text">Quantos planetas você consegue nomear?</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../assets/imgs/chuva e meteoros.png" style="width:50%" alt="Imagem 3 tema galáxia">
+            <div class="text">Entre no Universo da SpaceStore!</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="../assets/imgs/fases lua.png" style="width:100%" alt="Imagem 4 tema astronauta">
+            <div class="text">Descubra os mistérios do céu noturno!</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="../assets/imgs/foguete-voando.png" style="width:100%" alt="Imagem 5 tema telescópio">
+            <div class="text">Você está pronto para a decolagem?</div>
+        </div>
+        <section id="sobre-conteudo" class="secao-espacial">
+        <h2>🌌 Sobre a SpaceStore</h2>
+        <p>Bem-vindo à SpaceStore, a loja onde o universo está ao seu alcance! 🚀✨</p>
+        <p>Nascida da paixão pelo espaço sideral, a SpaceStore oferece produtos únicos inspirados nas estrelas, planetas e mistérios do cosmos. Aqui, cada item é pensado para despertar a curiosidade, a imaginação e o espírito explorador que existe em cada um de nós.</p>
+        <p>De canecas que brilham como constelações a telescópios espaciais que revelam o infinito, nossa missão é trazer um pedacinho do espaço para o seu dia a dia. 🌠</p>
+        <p>Mais do que uma loja, somos uma experiência cósmica. Convidamos você a embarcar nessa viagem intergaláctica e descobrir um universo inteiro de produtos incríveis, criativos e cheios de energia estelar.</p>
+        <h3>🪐 SpaceStore — o espaço onde sua imaginação decola!</h3>
+    </section>
+
+    </div>
+</main>
+
+
+    <script src="../js/slideshow.js"></script>
+    <script src="../js/color.js"></script>
+    
 </body>
 </html>

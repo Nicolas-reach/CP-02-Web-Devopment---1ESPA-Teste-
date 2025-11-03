@@ -1,31 +1,27 @@
-//FUNÇÃO TROCAR
-function trocar(cor){
-  document.body.style.background=cor;  
-}
+let slideIndex = 0;
+showSlides(); 
 
-//FUNÇÃO SLIDESHOW
-
-// DECLARANDO UM ARRAY DE IMAGENS
-
-let imagens=[
-    "src/assets/image1.jpg",
-    "src/assets/image2.jpg",
-    "src/assets/image3.jpg"
-];
-
-//DECLARANDO AS VARIAVEIS
-
-let i=0;
-let tempo =5000; // milisegundos
-
-//função 
-
-function slideShow(){
-    document.getElementById("image").src=imagens[i];
-    i++;
-    if(i == imagens.length){
-        i=0;
+function showSlides() {
+    let i;
+    
+    let slides = document.getElementsByClassName("mySlides");
+    
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
-    setTimeout(slideShow,tempo)
+    
+    
+    slideIndex++;
+    
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }    
+    
+    
+    slides[slideIndex - 1].style.display = "block";  
+    
+
+    setTimeout(showSlides, 2000); 
 }
-slideShow();

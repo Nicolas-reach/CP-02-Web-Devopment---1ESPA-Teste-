@@ -3,38 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Produtos, vinhos, preços, vinharia Agnello">
-    <meta name="description" content="Produtos e vinhos da Vinharia Agnello">
-    <title>Produtos</title>
+    <meta name="keywords" content="SpaceStore, Produtos espaciais, Tecnologia, Equipamentos, Preços">
+    <meta name="description" content="Catálogo de produtos futuristas e equipamentos espaciais da SpaceStore.">
+    <title>Produtos | SpaceStore</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="./src/assets/imgs/Favicon SpaceStore.jpg" type="image/jpeg">
 </head>
-<body class="produto">
- <nav>
-      <ul>
+<body class="loja">
+
+    <header>
+        <h1>Catálogo de Produtos</h1>
+    </header>
+
+    <nav>
+        <ul>
             <li><a href="./contato.html">Contato</a></li>
             <li><a href="../../index.html">Início</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
             <li><a href="./quiz.html">Quiz</a></li>
-            <li><a href="./loja.html">loja</a></li>
+            <li><a href="./loja.html">Loja</a></li>
             <div>
-                    <input type="button" class="cor" onclick="trocar('#3ae4b1')"/>
-                    <input type="button" class="cor" onclick="trocar('#c13af2')"/>
-                    <input type="button" class="cor" onclick="trocar('#fbff24')"/>
-                </div>
-      </ul>
+                <input type="button" class="cor" id="botao1" onclick="trocar('#3ae4b1')"/>
+                <input type="button" class="cor" id="botao2" onclick="trocar('#c13af2')"/>
+                <input type="button" class="cor" id="botao3" onclick="trocar('#fbff24')"/>
+            </div>
+        </ul>
     </nav>
-    <h2>Loja</h2>
-    <p>A <strong>SpaceStore</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem a nesciunt ipsum consequatur. Assumenda.</p>
-    <img src="img/sobre.jpg" alt="Astronauta no espaço">
-  </section>
     
-         <p>© SpaceStore - Todos os direitos reservados</p>
-         <a href="https://www.instagram.com/vinhariaagnello">Instagram</a> 
-         <a href="https://www.facebook.com/vinhariaagnello">Facebook</a>
+    <main>
+        <section class="secao-espacial">
+            <h2 id="txt">Equipamentos e Inovações Espaciais</h2>
+            <p>Explore nossa linha exclusiva de tecnologia de ponta, desenvolvida para o futuro da exploração intergaláctica.</p>
+
+            <div class="produtos">
+                
+                <div class="produto">
+                    <h3>Caneca Constelar</h3>
+                    <img src="../assets/imgs/Caneca.png" alt="Caneca Constelar" class="amostra">
+                    <p>Desperte o astronauta que existe em você com a Caneca Constelar! Ao adicionar uma bebida quente, as constelações ganham vida em um espetáculo cósmico de cores. Ideal para quem gosta de começar o dia com uma dose de café… e de universo. ☕✨</p>
+                    <p><strong>Preço: R$ 25,00</strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <h3>Mac&Cheese de astronauta</h3>
+                    <img src="../assets/imgs/Mac.png" alt="Propulsor de dobra espacial" class="amostra">
+                    <p>O sabor das estrelas em cada mordida! Nosso Mac&Cheese de Astronauta é desidratado como nas verdadeiras missões espaciais — basta adicionar água quente e saborear uma explosão cremosa digna de quem conquistou o espaço. 🚀🍽️</p>
+                    <p><strong>Preço: R$ 50,00</strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <h3>Telescópio Espacial</h3>
+                    <img src="../assets/imgs/Telescopio.png" alt="Robô assistente flutuante" class="amostra">
+                    <p>Explore o infinito com o Telescópio Espacial — perfeito para observar estrelas, planetas e até seus próprios sonhos! Com lentes de alta precisão e design inspirado nas missões da NASA, ele é o presente ideal para curiosos e exploradores do cosmos. 🌌👁️‍🗨️</p>
+                    <p><strong>Preço: R$ 350,00 </strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+                
+                <div class="produto">
+                    <h3>Luminaria Projeto de estrelas</h3>
+                    <img src="../assets/imgs/Luminaria.png" alt="Luminaria" class="amostra">
+                    <p>Transforme seu quarto em uma galáxia particular! A Luminária Projeto de Estrelas projeta constelações no teto e nas paredes, criando uma atmosfera mágica e relaxante. Ideal para noites cósmicas de descanso ou inspiração. 🌠🛏️</p>
+                    <p><strong>Preço: R$ 100,00</strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <h3>Capacete de Astronauta</h3>
+                    <img src="../assets/imgs/capacete astronauta.png" alt="capacete astronauta.png" class="amostra">
+                    <p>Entre em órbita com estilo! O Capacete de Astronauta é um item decorativo (ou de fantasia) que brilha no escuro e reproduz sons espaciais. Perfeito para fãs do espaço, cosplayers ou colecionadores de aventuras intergalácticas. 🧑‍🚀✨</p>
+                    <p><strong>Preço: R$ 250,00</strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <h3>Foguete Espacial</h3>
+                    <img src="../assets/imgs/onibus espacial.png" alt="onibus espacial" class="amostra">
+                    <p>Reviva as grandes missões da humanidade com o Ônibus Espacial em miniatura! Detalhado e resistente, ele é ideal para colecionadores e apaixonados pela exploração sideral. Uma lembrança que te leva para além da gravidade. 🌍➡️🌌</p>
+                    <p><strong>Preço: R$ 120,00</strong></p>
+                    <div>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+            </div> </section>
+    </main>
+
+    <footer>
+        <p>© 2025 SpaceStore - Todos os direitos reservados</p>
+        <a href="https://www.instagram.com/vinhariaagnello">Instagram</a> |
+        <a href="https://www.facebook.com/vinhariaagnello">Facebook</a>
     </footer>
 
-     <script src="../js/color.js"></script>
+    <script src="../js/color.js"></script>
     
 </body>
 </html>

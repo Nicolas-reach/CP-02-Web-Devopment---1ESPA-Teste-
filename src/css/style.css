@@ -132,28 +132,26 @@ nav ul li a:hover {
 nav ul li a:active {
     background-color: #777;
 }
-/* --- Estilo Específico para Centralizar e Estilizar o Formulário de Contato --- */
 
-/* Centraliza o container principal do formulário */
+/*Formulário de Contato*/
 .container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: flex-start; /* Alinha no topo, mas você pode usar 'center' */
+    justify-content: center; 
+    align-items: flex-start; 
     padding: 40px 20px;
-    min-height: calc(100vh - 120px); /* Garante que o container ocupe a maior parte da tela */
+    min-height: calc(100vh - 120px);
 }
 
-/* Estiliza o formulário em si (fundo, bordas) */
 .formulario-contato {
-    background-color: #999; /* Usa a cor de fundo similar ao .produto */
+    background-color: #999; 
     padding: 30px;
     border-radius: 20px;
-    max-width: 500px; /* Limita a largura para melhor leitura */
+    max-width: 500px; 
     width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para cada grupo de campo (div.form) */
+
 .form {
     margin-bottom: 15px;
     text-align: left;
@@ -175,12 +173,12 @@ nav ul li a:active {
     box-sizing: border-box;
     border: 1px solid #777;
     border-radius: 5px;
-    background-color: #f2f2f2; /* Fundo levemente cinza */
+    background-color: #f2f2f2;
     color: #333;
 }
 
 .form textarea {
-    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    resize: vertical; 
     min-height: 120px;
 }
 
